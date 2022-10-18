@@ -7,7 +7,7 @@ This app is a demonstration of how to access the [MyDataHelps REST API](https://
 
 Before you begin, you will need three things:
 
-* Your service account name, like “RKStudio.1234.test.”
+* Your service account name, like `RKStudio.12345678.Test`.
 * Your project ID, which is a GUID.
 * The private key you associated with your service account.
 
@@ -24,7 +24,7 @@ This is a command-line application in Java. To run the app:
 PRIVATE_KEY = "-----BEGIN RSA PRIVATE KEY-----\n230703de230703de230703de\nb62b0e24b62b0e24b62b0e24\n...\n-----END RSA PRIVATE KEY-----"
 ```
 
-3. Build the Java application and run the `QuickStart` class.
+3. Build the Java application and run the `Quickstart` class.
 
 If successful, the app will print out your token and number of participants in the console, like so:
 
@@ -41,6 +41,6 @@ The access token is only valid for a few minutes, but you can copy/paste it into
 
 ## Troubleshooting
 
-If you see an error when running the example application, double-check the information in the Prerequisites, particularly the format of the private key.
+If you see an error when running the application, double-check the information in the Prerequisites, particularly the format of the private key.
 
-If you have trouble getting the example application to work, feel free to [contact MyDataHelps Support](https://developer.mydatahelps.org/help.html).
+If you have trouble getting the application to work, feel free to [contact MyDataHelps Support](https://developer.mydatahelps.org/help.html).

@@ -18,11 +18,11 @@ import java.security.Security;
 import java.util.Date;
 import java.util.UUID;
 
-public class QuickStart {
+public class Quickstart {
 
     public static void main(String[] args) {
         try {
-            QuickStart app = new QuickStart();
+            Quickstart app = new Quickstart();
             System.out.println("--------------------------");
             System.out.println("Obtained access token:");
             System.out.println("  " + app.accessToken.getToken());
@@ -77,7 +77,7 @@ public class QuickStart {
     private final MyDataHelpsApi myDataHelpsApi;
     private AccessToken accessToken;
 
-    public QuickStart() {
+    public Quickstart() {
         Security.addProvider(new BouncyCastleProvider());
         String signedAssertion = generateJwt(Config.PRIVATE_KEY, Config.SERVICE_ACCOUNT_NAME, Config.TOKEN_URL);
         accessToken = getServiceToken(Config.BASE_URL, signedAssertion);
