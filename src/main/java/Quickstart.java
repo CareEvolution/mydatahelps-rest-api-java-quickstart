@@ -24,13 +24,14 @@ public class Quickstart {
         try {
             Quickstart app = new Quickstart();
             System.out.println("--------------------------");
-            System.out.println("Obtained access token:");
+            System.out.println("Obtained service access token:");
             System.out.println("  " + app.accessToken.getToken());
 
             ParticipantPage page = app.getParticipants("");
             System.out.println("--------------------------");
             System.out.println("Total Participants: " + page.getTotalParticipants());
 
+/* Additional examples:
             String participantIdentifier = UUID.randomUUID().toString();
             Participant participant = new Participant();
             participant.setParticipantIdentifier(participantIdentifier);
@@ -66,6 +67,7 @@ public class Quickstart {
             System.out.println("ID: " + participant.getId());
             System.out.println("Participant Token: " + accessToken.getToken());
             System.out.println("--------------------------");
+*/            
         }
         catch (Exception ex) {
             System.out.println(ex.getMessage());
