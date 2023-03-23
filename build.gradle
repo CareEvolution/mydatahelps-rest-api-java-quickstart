@@ -1,6 +1,8 @@
 plugins {
-    id 'java'
+    id "application"
 }
+
+apply plugin : "java" 
 
 group 'com.careevolution'
 version '1.0-SNAPSHOT'
@@ -24,4 +26,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+application {
+    mainClassName = "Quickstart"
 }
